@@ -1,6 +1,8 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: lightgrey;}
+    background-color: lightgrey;
+    opacity: 0.5;
+}
 
 h1 {
     color: white;
