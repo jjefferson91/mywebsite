@@ -17,4 +17,13 @@ h2 {
     border-style: dashed;
     border-width: 3px;
     border-color: white;
+    background-color: black;
+    
+} 
+
+.locations {
+    border-style: dashed;
+    border-width: 3px;
+    border-color: white;
+    background-color: white;
 }
