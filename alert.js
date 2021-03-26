@@ -1,14 +1,23 @@
-<script type="text/javascript">
-stars = [0,0,2,3,5]
+let x;
+let y;
 
-var sum = stars.reduce(add, 0);
-function add(a, b) {
-    return a + b;
-}
-var text='';
+let rating;
 
- for (i = 0; i < stars.length; i++) { 
-  text += "The percentege of the star "+(i+1)+ " is :"+ (stars[i]/sum)*100 + "<br>";
+x = 7;
+y = 11;
+
+console.log(x+" "+y);
+ 
+function ratePage() {
+    rating = prompt("Rate my website 1 - 5");
+    while (rating < 1 || rating > 5) {
+        if (rating < 1) {
+            alert("Rating invalid");
+        }
+        else if (rating > 5) {
+            alert("Thanks but too high");
+        }
+        rating = prompt("Rate my website 1 - 5"); 
+    }  
+    document.write("<p>"+rating+"</p>"); 
 }
-document.getElementById("demo").innerHTML = text;
-</script>
